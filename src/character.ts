@@ -1,10 +1,8 @@
-import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
+import { Character, ModelProviderName } from "@elizaos/core";
 import { zgPlugin } from "@elizaos/plugin-0g";
 export const character: Character = {
-    ...defaultCharacter,
     name: "Eliza",
     plugins: [zgPlugin],
-    clients: [],
     modelProvider: ModelProviderName.DEEPSEEK,
     settings: {
         secrets: {

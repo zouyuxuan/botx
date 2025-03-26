@@ -8,7 +8,6 @@ import {
 } from "@elizaos/core";
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
 import { createNodePlugin } from "@elizaos/plugin-node";
-import { solanaPlugin } from "@elizaos/plugin-solana";
 import { zgPlugin } from "@elizaos/plugin-0g";
 import fs from "fs";
 import net from "net";
@@ -60,7 +59,6 @@ export function createAgent(
       bootstrapPlugin,
       nodePlugin,
       zgPlugin,
-      character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
     ].filter(Boolean),
     providers: [],
     actions: [],

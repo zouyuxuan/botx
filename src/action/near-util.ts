@@ -170,7 +170,7 @@ export class ChatContract extends NearContract implements IChatContract {
 }
 // 示例1：使用钱包连接（浏览器环境）
 async function walletDemo() {
-  const contractId = 'chat.yourname.testnet';
+  const contractId = 'chx.testnet';
   const chat = await ChatContract.init(contractId, '', 'testnet');
   
   // 钱包登录
